@@ -1,0 +1,12 @@
+.full-name {
+    font-size: 56px;
+
+    width: 200px;
+    height: 60px;
+    background: transparent;
+    text-align: right;
+    text-decoration: underline;
+    }
+.click{
+    text-align: center;
+}
