@@ -7,25 +7,104 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/index.css"
     <title>AKATA</title>
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <p>your full name</p> 
-                <input type="text" class="full-name" id="full-name" value=""> 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./CSS/index.css">
+        <title>AKATA</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>your full name</p> 
+                    <input type="text" class="full-name" id="full-name" value=""> 
+                </div>
+                <div class="col-md-3">
+                    <p>Select your country</p>
+                    <label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>      
+                
+                    <select id="country" name="country" class="form-control">
+                     <option value="kenya">kenya</option>;
+                     <option value="uganda">uganda</option>;
+                     <option value="tanzania">tanzania</option>;
+                     <option value="ethiopia">ethiopia</option>
+    
+                       
+                    </select>
+                </div>
             </div>
-            <div class="col-md-3">
-                <p>Select your country</p>
-                <label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>      
-            
-                <select id="country" name="country" class="form-control">
-                 <option value="kenya">kenya</option>;
-                 <option value="uganda">uganda</option>;
-                 <option value="tanzania">tanzania</option>;
-                 <option value="ethiopia">ethiopia</option>
-
-                   
-                </select>
+            <div>
+                <div>
+                    <p>gender</p>
+                    <label for = "gender"><input id="gender"value="gender" type="radio" name="gender">MALE</label></br>
+                    <label for = "gender"><input id ="gender" value="gender" type="radio" name="gender">FEMALE</label>
+                </div>
             </div>
+            <div>
+                <label for = "date">
+                      
+    
+    
+    <script>
+        var month = new Array("Janu","Febr","Marc","Apri","May","Jun","Jul","Augs","Sept","Octo","Nove","Decm");
+        var startyear = "1950"; // Change the Starting year in your dropdown
+        var endyear = "2013";
+        // Change the ending year in the dropdown
+            function dayzaliwad(){
+                var month = document.birthday.birthmonth.options[document.birthday.birthmonth.selectedIndex].value;
+                var day = document.birthday.bbirthday.options[document.birthday.bbirthday.selectedIndex].value;
+                var year = document.birthday.birthyear.options[document.birthday.birthyear.selectedIndex].value;
+                var bbirthday = new Date(year,month,day);
+                var dayzaliwad = bbirthday.getDay();
+                var daysofweek = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                alert("You were born on a " + daysofweek[dayzaliwad]);
+                }
+        </script>
+    <form name ="birthday">
+        <div >
+            <table>
+                <tr>
+                    <td colspan="3" >
+                        <p>Enter your Birthdate</p> 
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <select name="birthmonth" size="1">
+                            <script>
+                            for(var i=0;i<month.length;i++)
+                            document.write("<option value="+i+">"+month[i]+"</option>");
+                            </script>
+                        </select>
+                    </td>
+                    <td >
+                        <select name="bbirthday" size="1">
+                            <script>
+                            for(var j=1;j<32;j++)
+                            document.write("<option value="+j+">"+j+"</option>");
+                            </script>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="birthyear" size="1">
+                            <script>
+                            for(var k=endyear;k>startyear;k--)
+                            document.write("<option value="+k+">"+k+"</option>");
+                            </script>
+                        </select>
+                    </td>
+                </tr>
+            </table>
         </div>
+           <div >
+            <p class="click"><input value="day born" onclick="dayzaliwad()" type="button"></p>
+           </div></form>
+        </div>
+        </div>
+    </body>
+    </html>
