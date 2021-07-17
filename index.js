@@ -28,31 +28,4 @@ if (gender == 'male' ){
         }
         document.write("Exiting switch block");
         }
-        else
-        var A = prompt("enter date");
-        switch (A)
-        {
-           case 'sunday' : document.write("your AKAN name is AKOSUA<br/>");
-           break;
-           
-           case 'monday': document.write("your AKAN name is ADWOA<br />");
-           break;
-        
-           case 'tuesday': document.write("your AKAN name is ABENAA<br />");
-           break;
-        
-           case 'wednesday': document.write("your AKAN name is AKUA<br />");
-           break;
-        
-           case 'thursday': document.write("your AKAN name is YAA<br />");
-           break;
-        
-           case 'friday': document.write("your AKAN name is AFUA<br />");
-           break;
-           
-           case 'saturday': document.write("your Akan name is {Ama}");
-           break;
-        
-           default:  document.write("Unknown grade<br />")
-        }
-        
+      
