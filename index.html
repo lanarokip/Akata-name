@@ -74,6 +74,14 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>
+                                            <select name="birthyear" size="1">
+                                                <script>
+                                                    for(var k=endyear;k>startyear;k--)
+                                                    document.write("<option value="+k+">"+k+"</option>");
+                                                </script>
+                                            </select>
+                                        </td>
                                         <td >
                                             <select name="birthmonth" size="1">
                                                 <script>
@@ -90,14 +98,7 @@
                                                 </script>
                                             </select>
                                         </td>
-                                        <td>
-                                            <select name="birthyear" size="1">
-                                                <script>
-                                                    for(var k=endyear;k>startyear;k--)
-                                                    document.write("<option value="+k+">"+k+"</option>");
-                                                </script>
-                                            </select>
-                                        </td>
+                                       
                                     </tr>
                                 </table>
                                 </div>
@@ -129,7 +130,7 @@
                                     }
                                     
                         if (selectedValue == 'male' ){
-                                var A = prompt("enter date");
+                                var A = prompt('enter day born');
                                 switch (A)
                                 {
                                 case 'sunday' : document.write("your AKAN name is KWASI<br/>");
