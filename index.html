@@ -46,141 +46,146 @@
             <div>
                 <label for = "date">
                       
-    <script>
-        var month = new Array("Janu","Febr","Marc","Apri","May","Jun","Jul","Augs","Sept","Octo","Nove","Decm");
-        var startyear = "1950"; // Change the Starting year in your dropdown
-        var endyear = "2013";
-        // Change the ending year in the dropdown
-            function dayzaliwad(){
-                var month = document.birthday.birthmonth.options[document.birthday.birthmonth.selectedIndex].value;
-                var day = document.birthday.bbirthday.options[document.birthday.bbirthday.selectedIndex].value;
-                var year = document.birthday.birthyear.options[document.birthday.birthyear.selectedIndex].value;
-                var bbirthday = new Date(year,month,day);
-                var dayzaliwad = bbirthday.getDay();
-                var daysofweek = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
-                alert("You were born on a " + daysofweek[dayzaliwad]);
-                }
-        </script>
-    <form name ="birthday">
-        <div >
-            <table>
-                <tr>
-                    <td colspan="3" >
-                        <p>Enter your Birthdate</p> 
-                    </td>
-                </tr>
-                <tr>
-                    <td >
-                        <select name="birthmonth" size="1">
-                            <script>
-                                for(var i=0;i<month.length;i++)
-                                document.write("<option value="+i+">"+month[i]+"</option>");
-                            </script>
-                        </select>
-                    </td>
-                    <td >
-                        <select name="bbirthday" size="1">
-                            <script>
-                                for(var m=1;m<32;m++)
-                                document.write("<option value="+m+">"+m+"</option>");
-                            </script>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="birthyear" size="1">
-                            <script>
-                                for(var k=endyear;k>startyear;k--)
-                                document.write("<option value="+k+">"+k+"</option>");
-                            </script>
-                        </select>
-                    </td>
-                </tr>
-            </table>
-
-
-<!-- Akan section -->
-            <div>
-                <div >
-                    <form>
-                        <input type="radio" name="choice" value="male" id="choice-male"> 
-                        <label for="choice-yes">male</label>
-                        <input type="radio" name="choice" value="female" id="choice-female">
-                        <label for="choice-no">woman</label>
-                        <button id="query">Show gender</button>
-                    </form>
                     <script>
-                        const query = document.querySelector('#query');
-                        // handle button click
-                        query.onclick = function () {
-                            const rbs = document.querySelectorAll('input[name="choice"]');
-                            let selectedValue;
-                            for (const rb of rbs) {
-                                if (rb.checked) {
-                                    selectedValue = rb.value;
-                                    break;
+                        var month = new Array("Janu","Febr","Marc","Apri","May","Jun","Jul","Augs","Sept","Octo","Nove","Decm");
+                        var startyear = "1950"; // Change the Starting year in your dropdown
+                        var endyear = "2013";
+                        // Change the ending year in the dropdown
+                            function dayzaliwad(){
+                                var month = document.birthday.birthmonth.options[document.birthday.birthmonth.selectedIndex].value;
+                                var day = document.birthday.bbirthday.options[document.birthday.bbirthday.selectedIndex].value;
+                                var year = document.birthday.birthyear.options[document.birthday.birthyear.selectedIndex].value;
+                                var bbirthday = new Date(year,month,day);
+                                var dayzaliwad = bbirthday.getDay();
+                                var daysofweek = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                alert("You were born on a " + daysofweek[dayzaliwad]);
                                 }
-                            }
-                            alert (selectedValue)
+                        </script>
+                    <form name ="birthday">
+                        <div >
+                            <table>
+                                <tr>
+                                    <td colspan="3" >
+                                        <p>Enter your Birthdate</p> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td >
+                                        <select name="birthmonth" size="1">
+                                            <script>
+                                                for(var i=0;i<month.length;i++)
+                                                document.write("<option value="+i+">"+month[i]+"</option>");
+                                            </script>
+                                        </select>
+                                    </td>
+                                    <td >
+                                        <select name="bbirthday" size="1">
+                                            <script>
+                                                for(var m=1;m<32;m++)
+                                                document.write("<option value="+m+">"+m+"</option>");
+                                            </script>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="birthyear" size="1">
+                                            <script>
+                                                for(var k=endyear;k>startyear;k--)
+                                                document.write("<option value="+k+">"+k+"</option>");
+                                            </script>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            </div>
+                            <div>
+                                <p><input value="Birthday" onclick="dayzaliwad()" type="button"></p></center>
+                            </div>
+                            <div>
+                                <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <title>JavaScript Radio Buttons</title>
+                    </head>
+                    <body>
+                        <form>
+                            <input type="radio" name="choice" value="male" id="choice-male" required> 
+                              male
+                            <input type="radio" name="choice" value="female" id="choice-female" required>
+                             female
+                            <button id="query">Show gender</button>
+                        </form>
+                        <script>
+                            const query = document.querySelector('#query');
+                            // handle button click
+                            query.onclick = function () {
+                                const rbs = document.querySelectorAll('input[name="choice"]');
+                                let selectedValue;
+                                for (const rb of rbs) {
+                                    if (rb.checked) {
+                                        selectedValue = rb.value;
+                                        break;
+                                    }
+                                }
+                                
+                    if (selectedValue == 'male' ){
+                            var A = prompt("enter date");
+                            switch (A)
+                            {
+                               case 'sunday' : document.write("your AKAN name is KWASI<br/>");
+                               break;
+                               
+                               case 'monday': document.write("your AKAN name is KWADWO<br />");
+                               break;
                             
-                if (selectedValue = 'female' ){
-                        var A = dayzaliwad();
-                        switch (A)
-                        {
-                           case 'sunday' : document.write("your AKAN name is KWASI<br/>");
-                           break;
-                           
-                           case 'monday': document.write("your AKAN name is KWADWO<br />");
-                           break;
-                        
-                           case 'tuesday': document.write("your AKAN name is KWABENA<br />");
-                           break;
-                        
-                           case 'wednesday': document.write("your AKAN name is KWAKU<br />");
-                           break;
-                        
-                           case 'thursday': document.write("your AKAN name is Yaw<br />");
-                           break;
-                        
-                           case 'friday': document.write("your AKAN name is KOFI<br />");
-                           break;
-                           
-                           case 'saturday': document.write("your Akan name is {Kwame}");
-                           break;
-                        
-                           default:  document.write("Unknown akan name<br />")
+                               case 'tuesday': document.write("your AKAN name is KWABENA<br />");
+                               break;
+                            
+                               case 'wednesday': document.write("your AKAN name is KWAKU<br />");
+                               break;
+                            
+                               case 'thursday': document.write("your AKAN name is Yaw<br />");
+                               break;
+                            
+                               case 'friday': document.write("your AKAN name is KOFI<br />");
+                               break;
+                               
+                               case 'saturday': document.write("your Akan name is {Kwame}");
+                               break;
+                            
+                               default:  document.write("Unknown grade<br />")
+                            }
+                            document.write("Exiting switch block");
+                            }
+                            else if(selectedValue == 'female'){
+                            var A = prompt("enter date");
+                            switch (A)
+                            {
+                               case 'sunday' : document.write("your AKAN name is AKOSUA<br/>");
+                               break;
+                               
+                               case 'monday': document.write("your AKAN name is ADWOA<br />");
+                               break;
+                            
+                               case 'tuesday': document.write("your AKAN name is ABENAA<br />");
+                               break;
+                            
+                               case 'wednesday': document.write("your AKAN name is AKUA<br />");
+                               break;
+                            
+                               case 'thursday': document.write("your AKAN name is YAA<br />");
+                               break;
+                            
+                               case 'friday': document.write("your AKAN name is AFUA<br />");
+                               break;
+                               
+                               case 'saturday': document.write("your Akan name is {Ama}");
+                               break;
+                            
+                               default:  document.write("Unknown grade<br />")
+                            }
                         }
-                        document.write("Exiting switch block");
-                        }
-                        else{
-                        var A = dayzaliwad(daysofweek);
-                        switch (A)
-                        {
-                           case 'sunday' : document.write("your AKAN name is AKOSUA<br/>");
-                           break;
-                           
-                           case 'monday': document.write("your AKAN name is ADWOA<br />");
-                           break;
-                        
-                           case 'tuesday': document.write("your AKAN name is ABENAA<br />");
-                           break;
-                        
-                           case 'wednesday': document.write("your AKAN name is AKUA<br />");
-                           break;
-                        
-                           case 'thursday': document.write("your AKAN name is YAA<br />");
-                           break;
-                        
-                           case 'friday': document.write("your AKAN name is AFUA<br />");
-                           break;
-                           
-                           case 'saturday': document.write("your Akan name is {Ama}");
-                           break;
-                        
-                           default:  document.write("Unknown akan  name<br />")
-                        }
-                    }
-                     };
-                    </script>
+                         };
+                        </script>
                 </div>
             </div>
     </body>
