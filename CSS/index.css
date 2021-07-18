@@ -34,8 +34,12 @@ body{
     font-family: 'Zen Loop', cursive;
     font-size: 50px;
 }
-.row{
+.roww{
     background-image: url(../assets/background.jpeg);
     background-size: cover;
     color:white
+}
+.container-one{
+    background-image: url(../assets/background\ one.jpg);
+    background-size: cover;
 }
