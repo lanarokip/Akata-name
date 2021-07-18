@@ -10,3 +10,18 @@
 .click{
     text-align: center;
 }
+.fun{
+    color:red;
+    font-family:cursive;
+}
+.know{
+    color: saddlebrown;
+}
+.jumbotro{
+    background-image:url(../u.jpg);
+    background-size: cover;
+
+}
+.jumbotron{
+    height: 50vh;
+}

@@ -18,6 +18,10 @@
         <title>AKATA</title>
     </head>
     <body>
+        <div class="jumbotron jumbotro">
+            <p class= "display-4 fun" >LET'S HAVE SOME FUN</p>
+            <h5 class="pl-4 know">want to know your Ghanan name??</h5>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
@@ -99,9 +103,9 @@
                 <div >
                     <form>
                         <input type="radio" name="choice" value="male" id="choice-male"> 
-                          male
+                        <label for="choice-yes">male</label>
                         <input type="radio" name="choice" value="female" id="choice-female">
-                         female
+                        <label for="choice-no">woman</label>
                         <button id="query">Show gender</button>
                     </form>
                     <script>
@@ -116,8 +120,9 @@
                                     break;
                                 }
                             }
+                            alert (selectedValue)
                             
-                if (selectedValue == 'male' ){
+                if (selectedValue = 'female' ){
                         var A = dayzaliwad();
                         switch (A)
                         {
@@ -142,12 +147,12 @@
                            case 'saturday': document.write("your Akan name is {Kwame}");
                            break;
                         
-                           default:  document.write("Unknown grade<br />")
+                           default:  document.write("Unknown akan name<br />")
                         }
                         document.write("Exiting switch block");
                         }
                         else{
-                        var A = dayzaliwad();
+                        var A = dayzaliwad(daysofweek);
                         switch (A)
                         {
                            case 'sunday' : document.write("your AKAN name is AKOSUA<br/>");
@@ -171,7 +176,7 @@
                            case 'saturday': document.write("your Akan name is {Ama}");
                            break;
                         
-                           default:  document.write("Unknown grade<br />")
+                           default:  document.write("Unknown akan  name<br />")
                         }
                     }
                      };
