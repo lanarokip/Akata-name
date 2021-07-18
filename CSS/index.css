@@ -25,3 +25,10 @@
 .jumbotron{
     height: 50vh;
 }
+.rule{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.mile{
+    font-size: 24px;
+    color: blueviolet;
+}
