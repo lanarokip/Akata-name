@@ -17,9 +17,6 @@
 .know{
     color: saddlebrown;
 }
-.jumbotro{
-    background-image:url(../u.jpg);
-    background-size: cover;
 
 }
 .jumbotron{
@@ -33,5 +30,12 @@
     color: blueviolet;
 }
 body{
-    background-color: blueviolet;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Zen Loop', cursive;
+    font-size: 50px;
+}
+.row{
+    background-image: url(../assets/background.jpeg);
+    background-size: cover;
+    color:white
 }
