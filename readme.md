@@ -10,7 +10,7 @@ This is my personal portfolio. It contains all my details, schools i have gone t
 * Ensure you are in your prefered folder, where you want it to be set up.
 * run this comand in your terminal git clone
 ### live site 
-view [live](#)
+view [live](https://lanarokip.github.io/Akata-name/)
 ## Known Bugs
 no bugs as of deployment
 ## Technologies Used
