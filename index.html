@@ -22,34 +22,7 @@
         </div>
         <!-- adding details of Akan name -->
         <div class="container-one pt-5">
- 
-            <div class="container  ">
-                <div class="row text-center bg-white ">
-                    <div class="col-md-3">
-                        <img src="./assets/ghanan.jpeg" height="150px">
-                    </div>
-                    <div class="col-md-9">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est explicabo praesentium ducimus asperiores esse, beatae, blanditiis obcaecati maxime inventore reiciendis exercitationem a minima quas delectus at. Doloremque qui unde nam.</p>
-                    </div>
-                </div>
-                <div class="row text-center bg-white mt-5">
-                    <div class="col-md-3">
-                        <img src="./assets/pic2.jpeg"class="img-fluid">
-                    </div>
-                    <div class="col-md-9">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est explicabo praesentium ducimus asperiores esse, beatae, blanditiis obcaecati maxime inventore reiciendis exercitationem a minima quas delectus at. Doloremque qui unde nam.</p>
-                    </div>
-                </div>
-                <div class="row text-center bg-white mt-5">
-                    <div class="col-md-3">
-                        <img src="./assets/pic3.jpeg" class="img-fluid">
-                    </div>
-                    <div class="col-md-9">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est explicabo praesentium ducimus asperiores esse, beatae, blanditiis obcaecati maxime inventore reiciendis exercitationem a minima quas delectus at. Doloremque qui unde nam.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- detail section containing days and gender -->
      
                 <div class="form roww text-color-white ">
@@ -75,22 +48,13 @@
 
                         <!-- time section -->
 
-                        <div>
+                        <div class="white">
                             <label for = "date">
                                 
                                 <script>
-                                    var month = new Array("Janu","Feb","Marc","Apri","May","Jun","Jul","Augs","Sept","Octo","Nove","Decm");
+                                   var month = new Array("Janu","Feb","Marc","Apri","May","Jun","Jul","Augs","Sept","Octo","Nove","Decm");
                                     var startyear = "1800"; 
                                     var endyear = "2099";
-                                        function dayzaliwad(){
-                                            var month = document.birthday.birthmonth.options[document.birthday.birthmonth.selectedIndex].value;
-                                            var day = document.birthday.bbirthday.options[document.birthday.bbirthday.selectedIndex].value;
-                                            var year = document.birthday.birthyear.options[document.birthday.birthyear.selectedIndex].value;
-                                            var bbirthday = new Date(year,month,day);
-                                            var dayzaliwad = bbirthday.getDay();
-                                            var daysofweek = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
-                                            alert("You were born on a " + daysofweek[dayzaliwad]);
-                                            }
                                     </script>
                                 <form name ="birthday">
                                     <div >
@@ -143,77 +107,9 @@
                                         female
                                         <button id="query">know Akan name</button>
                                     </form>
-                                    <script>
-                                        const query = document.querySelector('#query');
-                                        // handle button click
-                                        query.onclick = function () {
-                                            const rbs = document.querySelectorAll('input[name="choice"]');
-                                            let selectedValue;
-                                            for (const rb of rbs) {
-                                                if (rb.checked) {
-                                                    selectedValue = rb.value;
-                                                    break;
-                                                }
-                                            }
-                                            
-                                if (selectedValue == 'male' ){
-                                        var A = prompt('enter day born');
-                                        switch (A)
-                                        {
-                                        case 'sunday' : document.write("your AKAN name is KWASI<br/>");
-                                        break;
+                                    <!-- <script>
                                         
-                                        case 'monday': document.write("your AKAN name is KWADWO<br />");
-                                        break;
-                                        
-                                        case 'tuesday': document.write("your AKAN name is KWABENA<br />");
-                                        break;
-                                        
-                                        case 'wednesday': document.write("your AKAN name is KWAKU<br />");
-                                        break;
-                                        
-                                        case 'thursday': document.write("your AKAN name is Yaw<br />");
-                                        break;
-                                        
-                                        case 'friday': document.write("your AKAN name is KOFI<br />");
-                                        break;
-                                        
-                                        case 'saturday': document.write("your Akan name is {Kwame}");
-                                        break;
-                                        
-                                        default:  document.write("Unknown grade<br />")
-                                        }
-                                        }
-                                        else if(selectedValue == 'female'){
-                                        var A = prompt("enter date");
-                                        switch (A)
-                                        {
-                                        case 'sunday' : document.write("your AKAN name is AKOSUA<br/>");
-                                        break;
-                                        
-                                        case 'monday': document.write("your AKAN name is ADWOA<br />");
-                                        break;
-                                        
-                                        case 'tuesday': document.write("your AKAN name is ABENAA<br />");
-                                        break;
-                                        
-                                        case 'wednesday': document.write("your AKAN name is AKUA<br />");
-                                        break;
-                                        
-                                        case 'thursday': document.write("your AKAN name is YAA<br />");
-                                        break;
-                                        
-                                        case 'friday': document.write("your AKAN name is AFUA<br />");
-                                        break;
-                                        
-                                        case 'saturday': document.write("your Akan name is {Ama}");
-                                        break;
-                                        
-                                        default:  document.write("Unknown grade<br />")
-                                        }
-                                    }
-                                    };
-                                    </script>
+                                    </script> -->
                             </div>
                         </div>
                     </div>
@@ -225,4 +121,5 @@
                 <h4></h4>
             </div>
     </body>
+    <script src="./index.js"></script>
     </html>

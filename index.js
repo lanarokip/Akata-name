@@ -1,58 +1,81 @@
-var gender = prompt("input gender")
-if (gender == 'male' ){
-        var A = prompt("enter date");
-        switch (A)
-        {
-           case 'sunday' : document.write("your AKAN name is KWASI<br/>");
-           break;
-           
-           case 'monday': document.write("your AKAN name is KWADWO<br />");
-           break;
-        
-           case 'tuesday': document.write("your AKAN name is KWABENA<br />");
-           break;
-        
-           case 'wednesday': document.write("your AKAN name is KWAKU<br />");
-           break;
-        
-           case 'thursday': document.write("your AKAN name is Yaw<br />");
-           break;
-        
-           case 'friday': document.write("your AKAN name is KOFI<br />");
-           break;
-           
-           case 'saturday': document.write("your Akan name is {Kwame}");
-           break;
-        
-           default:  document.write("Unknown grade<br />")
+var month = new Array("Janu","Feb","Marc","Apri","May","Jun","Jul","Augs","Sept","Octo","Nove","Decm");
+var startyear = "1800"; 
+var endyear = "2099";
+        function dayzaliwad(){
+        var month = document.birthday.birthmonth.options[document.birthday.birthmonth.selectedIndex].value;
+        var day = document.birthday.bbirthday.options[document.birthday.bbirthday.selectedIndex].value;
+        var year = document.birthday.birthyear.options[document.birthday.birthyear.selectedIndex].value;
+        var bbirthday = new Date(year,month,day);
+        var dayzaliwad = bbirthday.getDay();
+        var daysofweek = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        alert("You were born on a " + daysofweek[dayzaliwad]);
         }
-        document.write("Exiting switch block");
-        }
-        else
-        var A = prompt("enter date");
-        switch (A)
-        {
-           case 'sunday' : document.write("your AKAN name is AKOSUA<br/>");
-           break;
-           
-           case 'monday': document.write("your AKAN name is ADWOA<br />");
-           break;
-        
-           case 'tuesday': document.write("your AKAN name is ABENAA<br />");
-           break;
-        
-           case 'wednesday': document.write("your AKAN name is AKUA<br />");
-           break;
-        
-           case 'thursday': document.write("your AKAN name is YAA<br />");
-           break;
-        
-           case 'friday': document.write("your AKAN name is AFUA<br />");
-           break;
-           
-           case 'saturday': document.write("your Akan name is {Ama}");
-           break;
-        
-           default:  document.write("Unknown grade<br />")
-        }
-        
+        const query = document.querySelector('#query');
+      // handle button click
+      query.onclick = function () {
+         const rbs = document.querySelectorAll('input[name="choice"]');
+         let selectedValue;
+         for (const rb of rbs) {
+            if (rb.checked) {
+                  selectedValue = rb.value;
+                  break;
+            }
+         }
+         
+if (selectedValue == 'male' ){
+       A = alert('input day born');
+      switch (A)
+      {
+      case 'sunday' : alert("your AKAN name is KWASI");
+      break;
+      
+      case 'monday': alert("your AKAN name is KWADWO");
+      break;
+      
+      case 'tuesday': alert("your AKAN name is KWABENA");
+      break;
+      
+      case 'wednesday': alert("your AKAN name is KWAKU");
+      break;
+      
+      case '4' : alert("your AKAN name is Yaw");
+      break;
+      
+      case 'friday': alert("your AKAN name is KOFI");
+      break;
+      
+      case 'saturday': alert("your Akan name is {Kwame}");
+      break;
+      
+      default:  alert("Unknown grade")
+      }
+      }
+      else if(selectedValue == 'female'){
+      var A = prompt("enter date");
+      switch (A)
+      {
+      case 'sunday' :alert("your AKAN name is AKOSUA");
+      break;
+      
+      case 'monday': alert("your AKAN name is ADWOA");
+      break;
+      
+      case 'tuesday': alert("your AKAN name is ABENAA");
+      break;
+      
+      case 'wednesday': alert("your AKAN name is AKUA");
+      break;
+      
+      case 'Thursday': alert("your AKAN name is YAA");
+      break;
+      
+      case 'friday': alert("your AKAN name is AFUA");
+      break;
+      
+      case 'saturday': alert("your Akan name is Ama");
+      break;
+      
+      default:  alert("Unknown grade")
+      }
+}
+};
