@@ -1,6 +1,6 @@
 var month = new Array("Janu","Feb","Marc","Apri","May","Jun","Jul","Augs","Sept","Octo","Nove","Decm");
-var startyear = "1800"; 
-var endyear = "2099";
+var startyear = "1600"; 
+var endyear = "2080";
         function dayzaliwad(){
         var month = document.birthday.birthmonth.options[document.birthday.birthmonth.selectedIndex].value;
         var day = document.birthday.bbirthday.options[document.birthday.bbirthday.selectedIndex].value;
